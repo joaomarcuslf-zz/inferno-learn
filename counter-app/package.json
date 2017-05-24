@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bulma": "^0.4.1",
     "inferno": "^3.2.2",
-    "inferno-component": "^3.2.2"
+    "inferno-component": "^3.2.2",
+    "ramda": "^0.23.0"
   },
   "devDependencies": {
     "inferno-scripts": "3.0.0"
