@@ -1,0 +1,8 @@
+{
+  "name": "inferno-learn",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
