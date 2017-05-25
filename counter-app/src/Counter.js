@@ -16,7 +16,7 @@ export const Button = ({ className, onClick, children }) => (
 );
 
 const view = (update, count) => (
-  <div class="columns has-text-centered">
+  <div class="columns is-mobile has-text-centered">
     <Button className="column" onClick={update(action.Dec)}>-</Button>
     <div class="column title is-2">
       {count}
