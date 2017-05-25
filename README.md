@@ -4,6 +4,6 @@ Serie of application to learn Inferno Lib and some state managing architeture
 
 # App list:
 
-[ ] Counter
-[ ] Todo list
-[ ] Login app
+- [x] [Counter](/tree/master/counter-app)
+- [ ] Todo list
+- [ ] Login app
