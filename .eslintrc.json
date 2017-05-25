@@ -1,5 +1,8 @@
 {
   "extends": "eslint:recommended",
+  "plugins": [
+    "inferno"
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -9,11 +12,19 @@
   "parserOptions": {
     "ecmaVersion": 6,
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "experimentalObjectRestSpread": true
     },
     "sourceType": "module"
   },
   "rules": {
+    "prefer-spread": "error",
+    "prefer-destructuring": ["error", {
+      "array": true,
+      "object": true
+    }, {
+      "enforceForRenamedProperties": false
+    }],
     "no-console": "off",
     "strict": [
       "error",
