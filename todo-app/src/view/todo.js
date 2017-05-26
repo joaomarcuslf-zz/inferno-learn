@@ -62,16 +62,16 @@ export class SingleTodoView extends Component {
     const todo = this.props.todo;
 
     return (
-      <Container>
+      <Container className="has-text-centered">
         #{todo.id}
         <strong>{todo.text}</strong>
         <i>{todo.done ? "DONE!" : ""}</i>
 
         <br />
 
-        <div class="field is-grouped is-horizontal has-text-centered">
+        <div class="field has-addons has-addons-centered">
           <div class="control">
-            <label class="checkbox">
+            <label class="checkbox is-medium">
               <input
                 type="checkbox"
                 checked={todo.done}
