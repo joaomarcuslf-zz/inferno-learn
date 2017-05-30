@@ -21,6 +21,14 @@ export default class TodoViewModel {
     }
   }
 
+  @action edit(todo) {
+    const index = this.todos.indexOf(todo);
+
+    this.todos.forEach(
+      (elm, i) => (i === index ? elm.set("editing", !todo.editing) : elm)
+    );
+  }
+
   @action load() {
     if (window.localStorage) {
       const json = JSON.parse(window.localStorage.getItem("todos") || "[]");

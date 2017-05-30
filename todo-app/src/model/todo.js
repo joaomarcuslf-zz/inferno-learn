@@ -13,6 +13,8 @@ export default class Todo {
   @observable text = "";
   @observable done = false;
 
+  @observable editing = false;
+
   @computed get isValid() {
     return this.text !== "";
   }
